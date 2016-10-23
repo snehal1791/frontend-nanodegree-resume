@@ -123,12 +123,14 @@ var education = {
         "title": "Full Stack Web Developer Nanodegree",
         "school": "Udacity",
         "dates": "07/2016 - Future",
-        "url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
+        "url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004",
+        "onlineUrl": "https://www.udacity.com"
     }, {
         "title": "Front-End Web Developer Nanodegree",
         "school": "Udacity",
         "dates": "04/2016 - Future",
-        "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+        "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001",
+        "onlineUrl": "https://www.udacity.com"
     }]
 };
 
@@ -195,7 +197,7 @@ education.display = function() {
             var formattedOnlineDates = HTMLonlineDates.replace(data, education.onlineCourses[i].dates);
 
             $(".education-entry:last").append(formattedOnlineDates);
-            var formattedOnlineURL = HTMLonlineURL.replace(data, education.onlineCourses[i].url).replace("#", education.onlineCourses[i].url);
+            var formattedOnlineURL = HTMLonlineURL.replace(/%data%/g, education.onlineCourses[i].onlineUrl);
             $(".education-entry:last").append(formattedOnlineURL);
 
         }
