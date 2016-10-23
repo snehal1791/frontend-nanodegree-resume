@@ -44,9 +44,8 @@ h2 {
 }
 
 h3 {
-  font-style: italic;
   font-size: 20px;
-  color: #000;
+  color: #d65e5e;
   line-height: 22px;
 }
 
@@ -168,8 +167,17 @@ span {
   color: #bd1717;
 }
 
+em {
+  color: #333;
+}
+
 #lets-connect {
   text-align: center;
+}
+
+.url-link {
+  color: #333;
+  text-decoration: underline;
 }
 
 /* Media queries to handle various device widths */
